@@ -60,3 +60,51 @@ console.log(seungjoInfo.gender);
 seungjoInfo.gender = "Female";
 
 console.log(seungjoInfo.gender);
+
+
+//function
+console.log(seungjoInfo.favFood); //log -> function
+console.log(seungjoInfo, console);
+
+/*
+function sayHello(name, age){
+    console.log('Hello!', name, "you have", age);
+}
+*/
+function sayHello(name, age){
+    //console.log("Hello" + name + "you are" + age + "years old");
+    console.log(`Hello ${name} you are ${age} years old`);
+}
+
+//sexy function code with ``
+sayHello();
+sayHello("Seungjo",  25);
+console.log("Hi!");
+
+function sayHello(name, age){
+    return `Hello ${name} you are ${age} years old`;
+}
+
+const greetSeungjo = sayHello("Seungjo", 15);
+
+console.log(greetSeungjo);
+
+//calculate
+const calculator = {
+    plus: function(a, b){
+        return a + b;
+    }
+}
+
+const plus = calculator.plus(5, 5)
+console.log(plus);
+
+
+//JS DOM function controlling HTML
+const title = document.getElementById("title");
+
+console.log(title);
+
+console.error("FUCK");
+
+title.innerHTML = "Hi! from JS";
