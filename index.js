@@ -103,8 +103,29 @@ console.log(plus);
 //JS DOM function controlling HTML
 const title = document.getElementById("title");
 
-console.log(title);
-
-console.error("FUCK");
-
 title.innerHTML = "Hi! from JS";
+console.error("FUCK");
+//console.log(title);
+
+console.dir(title);
+
+title.style.color = "red";
+document.title = "I own you now";
+
+const title2 = document.querySelector("#title");
+
+
+//event
+function handleResize(event){
+    console.log(event);
+    //console.log("I have been resized");
+}
+
+function handleClick() {
+    title.style.color = "blue";
+}
+
+//window.addEventListener("resize",handleResize(event));
+title.addEventListener("click", handleClick);
+
+
